@@ -5,9 +5,15 @@ import {Product} from './types/product.type.ts'
 interface ProductContextType {
     products: Product[];
     filteredAndSortedProducts: Product[];
-    addProduct: (product: Product)=>void;
+    addProduct: (product: { id: any; creationDate: Date; name: string; description: string; price: number })=>void;
     deleteProduct: (id: number) => void;
-    updateProduct: (id: number, product: Product) => void;
+    updateProduct: (id: number, product: {
+        id: any;
+        creationDate: Date;
+        name: string;
+        description: string;
+        price: number
+    }) => void;
     setSortOption: (option: string) => void;
     searchTerm: string;
     setSearchTerm: (term: string) => void;
