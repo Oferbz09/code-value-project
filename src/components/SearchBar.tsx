@@ -82,9 +82,6 @@ const SearchBarWrapper = styled.div`
         padding: 10px;
     }
     
-    //.search-bar{
-    //    padding: 10px;
-    //}
     
     select {
         padding: 10px;

@@ -55,24 +55,29 @@ const ProductListWrapper = styled.div`
     right: 0;
     bottom: 0;
     margin: 10px;
-    padding: 3px 10px;
+    padding: 3px 15px;
     cursor: pointer;
     background-color: #FF9900;
     font-weight: bold;
     border-radius: 3px;
-    box-shadow: 1px 3px 2px 0px;
+    box-shadow: 1px 3px 2px 0;
   }
 
 
 `
 
 const ProductContainer = styled.ul`
-  padding: 15px;
+  padding: 10px;
   position: relative;
   margin: 0 0 10px 0;
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 5px;
   list-style: none;
+
+  :hover{
+    background-color: #9FC5F8;
+    opacity: 0.8;
+  }
 `;
 
 const ProductDetails = styled.div`

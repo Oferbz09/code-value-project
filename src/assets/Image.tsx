@@ -1,12 +1,12 @@
 import React from 'react';
 
 interface ImageProps {
-    src: string;
-    alt: string;
+    src: string,
+    alt?: any | string | undefined,
 }
 
 
-const Image: React.FC<ImageProps>= ({ src, alt})=>{
+const Image: React.FC<ImageProps> = ({src, alt}) => {
 
     return (
         <img src={src} alt={alt}/>
@@ -14,6 +14,4 @@ const Image: React.FC<ImageProps>= ({ src, alt})=>{
 }
 
 
-
-
-export default  Image
+export default Image
