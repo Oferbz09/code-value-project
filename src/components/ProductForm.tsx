@@ -1,11 +1,9 @@
 import React, {FormEvent} from 'react';
 import styled from 'styled-components';
-import {Product} from "../types/product.type.ts";
 import Image from "../assets/Image.tsx";
 
 interface ProductFormProps {
     singleProduct?: { name: string; description: string; price: number }
-    selectedProduct: Product | null,
     handleSubmit?: (e: FormEvent) => void,
     submitRef?: React.LegacyRef<HTMLButtonElement> | undefined,
     handleChange?: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void,
